@@ -30,7 +30,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <manifestFile>/home/ymazouar/Bureau/Exercice n°10/ChatV2/Chat/src/main/java/META-INF/MANIFEST.MF</manifestFile>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>server.Server</mainClass>

@@ -20,7 +20,7 @@ public class Server {
 
     Scanner sc;
 
-    ArrayList<Socket> lista;
+    ArrayList<Socket> sockets_list;
 
     /**
      * Server port
@@ -30,7 +30,7 @@ public class Server {
     public Server(int port) {
 
         this.port = port;
-        this.lista = new ArrayList();
+        this.sockets_list = new ArrayList();
 
         try {
             sc = new Scanner(System.in);
@@ -41,10 +41,10 @@ public class Server {
 
             while (true) {
                 socket = serverSocket.accept();
-                lista.add(socket);
-                ThreadServer server = new ThreadServer(socket, serverSocket, lista.size());
+                sockets_list.add(socket);
+                ThreadServer server = new ThreadServer(socket, serverSocket, sockets_list.size());
                 server.start();
-                System.out.println(lista.size() + " users connected");
+                System.out.println(sockets_list.size() + " users connected");
 
             }
 

@@ -6,4 +6,4 @@
 
 #### The order of sending messages is as follows: first the client, second the server. I hope it serves as an example. Finally, this example has been developed for educational purposes, I am not responsible for its misuse.
 
-#### Remember that you must have Java installed to be able to work with this prototype.
+#### Remember that you must have JVM installed to be able to work with this prototype.
